@@ -6,6 +6,99 @@
     <title>Battleship</title>
   </head>
   <body>
+    <dialog>
+      <form action="">
+        <label for="enemy">Play Against:</label>
+        <label>
+          <input type="radio" name="enemy" value="computer" checked /> Computer
+        </label>
+        <label> <input type="radio" name="enemy" value="2" /> Player 2 </label>
+        <button type="submit" class="modalClose">Enter</button>
+      </form>
+    </dialog>
+    <main>
+      <div class="playerBoard">
+        <span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span><span class="a"></span><span class="a"></span
+        ><span class="a"></span>
+      </div>
+
+      <div class="enemyBoard">
+        <span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span><span class="b"></span><span class="b"></span
+        ><span class="b"></span>
+      </div>
+    </main>
+
+    <div class="switch hidden">
+      <div class="switchContainer">
+        <button class="switchButton">Next Player</button>
+      </div>
+    </div>
+    <button type="button" class="restart">Restart</button>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

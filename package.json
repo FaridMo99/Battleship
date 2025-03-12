@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "pretest":"prettier --write . --config configs/prettier.config.js && eslint . --config configs/eslint.config.js",
+    "pretest": "prettier --write . --config configs/prettier.config.js && eslint . --config configs/eslint.config.js",
     "test": "jest --config configs/jest.config.mjs"
   },
   "devDependencies": {

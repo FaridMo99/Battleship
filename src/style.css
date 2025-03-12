@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  background-color: #242424;
+}
+
+* {
+  color: white;
+  font-weight: bold;
+}
+
+
+/*form*/
+
+dialog {
+  background-color: #242424;
+  border: 3px solid #e2438d;
+  border-radius: 1vw;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2vw;
+
+    * {
+      margin-bottom: 2vh;
+    }
+
+    button {
+      border: 2px solid #e2438d;
+      color: #e2438d;
+      background-color: #242424;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 3px 1px grey;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 1vw;
+}
+
+input[type="radio"]:checked {
+  border-color: #e2438d;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: #e2438d;
+  border-radius: 50%;
+}
+
+label {
+  display: flex;
+}
+
+.restart {
+  border: 2px solid #e2438d;
+  color: #e2438d;
+  background-color: #242424;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 48vw;
+  animation: rotateAnimation 200s linear infinite;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3px 1px grey;
+    transform: scale(1.05);
+  }
+}
+
+main {
+  width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.playerBoard,
+.enemyBoard {
+  width: 30%;
+  height: 30vw;
+  border: 2px solid #e2438d;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  box-shadow: 0 0 5vw 1vw #e2438d;
+
+  > * {
+    border: 2px solid #e2438d;
+    overflow: hidden;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+}
+
+.switch {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+
+  .switchContainer {
+    width: 33vw;
+    height: 33vh;
+    position: absolute;
+    top: 33.5vh;
+    left: 33.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    border-radius: 1vw;
+
+    .switchButton {
+      border: 2px solid #e2438d;
+      color: #e2438d;
+      background-color: #242424;
+      width: 33%;
+      height: 33%;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 3px 1px grey;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+
+
+.ship {
+    background-color: rgba(226, 67, 141, 0.3); 
+  }
+  
+  .hit-ship {
+    background-color: rgba(226, 67, 141, 0.8); 
+  }
+  
+  .miss {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+.hit {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg); /* Starting rotation (0 degrees) */
+  }
+  100% {
+    transform: rotate(360deg); /* Full rotation (360 degrees) */
+  }
+}
+
+/*  animation: rotateAnimation 0.1s linear infinite;          rotate animation just in case*/
